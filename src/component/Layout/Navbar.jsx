@@ -17,7 +17,7 @@ const Navbar = () => {
   const menuItems = [
     { name: 'Home', href: '/exumbeachcottage/' },
     { name: 'About Us', href: '/exumbeachcottage/about' },
-    { name: 'The Cottage', href: '/exumbeachcottage/property' },
+    { name: 'The Cottage', href: '/exumbeachcottage/the-cottage' },
     { name: 'Gallery', href: '/exumbeachcottage/gallery' },
     { name: 'Reviews', href: '/exumbeachcottage/reviews' },
   ];
@@ -43,8 +43,8 @@ const Navbar = () => {
               </span>
             </NavLink>
 
-            {/* 2. Desktop Navigation */}
-            <ul className="hidden lg:flex items-center gap-8 xl:gap-10">
+            {/* 2. Desktop Navigation (UPDATED: Changed lg to xl for tablet responsiveness) */}
+            <ul className="hidden xl:flex items-center gap-8 xl:gap-10">
               {menuItems.map((item) => (
                 <li key={item.name}>
                   <NavLink
@@ -79,8 +79,8 @@ const Navbar = () => {
               </li>
             </ul>
 
-            {/* 3. Mobile Toggle Button */}
-            <div className="lg:hidden flex justify-end">
+            {/* 3. Mobile/Tablet Toggle Button (UPDATED: Changed lg to xl) */}
+            <div className="xl:hidden flex justify-end">
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
                 className="p-2 text-gray-700 hover:bg-gray-100 rounded-full transition-colors active:scale-90"
@@ -158,7 +158,6 @@ const Navbar = () => {
                   </li>
                 ))}
 
-                {/* UPDATED: Mobile Contact Us Link formatted exactly like the other mobile links */}
                 <li
                   style={{ transitionDelay: `${menuItems.length * 80}ms` }}
                   className={`transform transition-all duration-700 ${isMobileMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}

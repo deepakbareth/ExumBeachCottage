@@ -7,6 +7,7 @@ import GalleryPage from './component/GalleryPage/GalleryPage';
 import ReviewsPage from './component/ReviewsPage/ReviewsPage';
 import ContactPage from './component/ContactPage/ContactPage';
 import AboutUsPage from './component/AboutUsPage/AboutUsPage';
+import TheCottage from './component/TheCottage/TheCottage';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/exumbeachcottage/about" element={<AboutUsPage />} />
         <Route path="/exumbeachcottage/reviews" element={<ReviewsPage />} />
         <Route path="/exumbeachcottage/contact" element={<ContactPage />} />
+        <Route path="/exumbeachcottage/the-cottage" element={<TheCottage />} />
 
       </Routes>
      <Footer />

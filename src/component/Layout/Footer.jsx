@@ -50,7 +50,7 @@ const Footer = () => {
             <ul className="space-y-3 text-base font-light text-gray-700">
               <li><NavLink to="/exumbeachcottage/" className="hover:text-[#54371b] hover:underline underline-offset-4 transition-all">Home</NavLink></li>
               <li><NavLink to="/exumbeachcottage/about" className="hover:text-[#54371b] hover:underline underline-offset-4 transition-all">About Us</NavLink></li>
-              <li><NavLink to="/exumbeachcottage/property" className="hover:text-[#54371b] hover:underline underline-offset-4 transition-all">Our Property</NavLink></li>
+              <li><NavLink to="/exumbeachcottage/the-cottage" className="hover:text-[#54371b] hover:underline underline-offset-4 transition-all">The Cottage</NavLink></li>
               <li><NavLink to="/exumbeachcottage/gallery" className="hover:text-[#54371b] hover:underline underline-offset-4 transition-all">Gallery</NavLink></li>
               <li><NavLink to="/exumbeachcottage/reviews" className="hover:text-[#54371b] hover:underline underline-offset-4 transition-all">Guest Reviews</NavLink></li>
             </ul>
